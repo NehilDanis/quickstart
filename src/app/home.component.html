@@ -1,0 +1,13 @@
+<p>
+  Welcome to Home Page {{user.u_name}} {{user.u_surname}}
+</p>
+
+<label>Name : </label>
+<input [(ngModel)]= "user.u_name"/>
+<label>Surname : </label>
+<input [(ngModel)]= "user.u_surname"/>
+
+
+<label>Like count: {{like_count}}</label>
+<button (click)="increaseLikeCount();">Like</button>
+<button (click)="fireOnHit($event)">Hit me for Alert!</button>
